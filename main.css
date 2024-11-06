@@ -1,0 +1,128 @@
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+            background: url("background.jpg");
+        }
+
+        header {
+            background-color: orange;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            
+        }
+        nav {
+    margin-top: 10px;
+    /* background-color: purple;  */
+    background: linear-gradient(to right, #970a0a, rgb(82, 24, 94));
+    padding: 10px; 
+    transition: 0.34s;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+        section {
+            min-height: calc(100vh - 40px); 
+    box-sizing: border-box; 
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        article {
+            margin-bottom: 20px;
+            position: relative;
+            border-radius: 5px;
+            overflow: hidden; 
+        }
+
+        article::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background: rgba(0, 0, 0, 0.5); 
+    border-radius: 5px; 
+}
+
+article h3,
+article p,
+article a {
+    z-index: 1; 
+    position: relative; 
+    color: #fff; 
+}
+
+article h3 {
+    margin-left: 20px;
+}
+
+article p {
+    margin-right: 20px; 
+}
+
+article img {
+    width: 100%; 
+    max-height: 80px; 
+}
+        article h3,
+        article p,
+        article a {
+            z-index: 1;
+        }
+
+        article h3 {
+            margin-left: 20px; 
+            color: #fff; 
+        }
+
+        article p {
+            margin-right: 20px; 
+            color: #fff; 
+        }
+
+        article img {
+            width: 100%;
+            max-height: 80px;
+        }
+
+        
+        article:nth-child(1)::before {
+            background-image: url("ni.jpg");
+        }
+
+        article:nth-child(2)::before {
+            background-image: url(mth.jpg);}
+
+    
+
+         footer {
+            background-color: #000; 
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+ .one:hover {
+    transform: scale(1.05);
+
+ }
+
+nav a:hover{
+    color: blue;
+}
